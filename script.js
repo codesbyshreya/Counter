@@ -2,10 +2,17 @@ let addbtn=document.querySelector("#buttonadd");
 let subbtn=document.querySelector("#buttonsub");
 let resetbtn=document.querySelector("button");
 let count=document.querySelector("#total-count")
+let warning=document.querySelector("#message")
 
-var value=0;
+let value=0;
 
 addbtn.addEventListener("click", function add(){
+     if(value >= 10){
+        warning.style.display = "block";
+        return;
+    }else{
+        warning.style.display = "none";
+    }
     value += 1;
     count.textContent = value;
     count.style.boxShadow = "0px 0px 100px green";
@@ -13,6 +20,12 @@ addbtn.addEventListener("click", function add(){
 })
 
 subbtn.addEventListener("click", function sub(){
+   if(value <= -10){
+        warning.style.display = "block";
+        return;
+    }else{
+        warning.style.display = "none";
+    }
     value -= 1;
     count.textContent = value;
     count.style.boxShadow = "0px 0px 100px red";
@@ -36,4 +49,7 @@ function updateColor(){
     }
 }
 
-updateColor();
+
+
+
+    

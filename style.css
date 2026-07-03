@@ -59,6 +59,12 @@ h1{
     
 }
 
+#message{
+    display:none;
+    color: rgba(47, 199, 153, 0.61);
+    font-size: 22px;
+}
+
 #buttonadd{
     padding: 24px 48px;
 }
