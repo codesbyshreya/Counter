@@ -9,16 +9,32 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 id="heading">Counter</h1>
-        <div id="total-count">0</div>
-        <div id="message">Limit Reached</div>
-        <div id="button">
-            <div  class="btn" id="buttonadd">+</div>
-            <div class="btn" id="buttonsub">-</div>
+    <header>
+        <div class="nav">
+            <div id="heading">
+                <p>Counter</p>
+            </div>
+            <button id="toggle">Light Mode</button>
         </div>
-        <button class="btn">RESET</button>
-    </div>
+    </header>
+    <main class="main">
+        <div class="counter-card">
+            <div id="total-count">0</div>
+            <!-- <div id="message">Limit Reached</div> -->
+            <div class="container">
+                <div class="button-container">
+                    <div id="buttonadd">+</div>
+                    <div id="buttonsub">-</div>
+                </div>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Made &hearts; codebyshreya</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
